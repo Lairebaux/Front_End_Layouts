@@ -7,13 +7,20 @@
 body {
     color: rgb(155, 150, 150);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* max-width: 1020px; */
+    min-width: 640px;
+    width: 100%;
+
 }
 
+
+header {
+    width: 100%;
+}
 
 header img {
     width: 100%;
 }
-
 
 h1,
 h2 {
@@ -74,7 +81,7 @@ nav ul li a:active {
 article#about {
     float: left;
     margin: 0 3% 0 3%;
-    width: 50%;
+    width: 51%;
 }
 
 article#about h1 {
@@ -88,6 +95,7 @@ article#about h2 {
 }
 
 article#about img {
+    float: right;
     margin: 0 0 10px 10px;
     width: 40%;
 }
