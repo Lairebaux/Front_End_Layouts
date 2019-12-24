@@ -1,0 +1,84 @@
+
+
+body {
+    /* single space */
+    line-height: 1;
+    /* center horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 640px;
+    max-width: 960px;
+    width: 95%;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.nav ul, .nav-vert ul {
+    list-style: none;
+}
+
+
+.nav a, .nav-vert a{
+    text-decoration: none;
+}
+
+.nav li {
+    width: 20%;
+    float: left;
+}
+
+.nav a {
+    display: block;
+    text-align: center;
+}
+
+section#leftColumn {
+    clear: left;
+    float: left;
+    padding: 2px;
+    width: 33%;
+}
+
+section#rightColumn{
+    float: left;
+    width: 67%;
+}
+
+section#rightColumn img {
+    width: 100%;
+
+
+}section#rightColumn > .nav li {
+    width: 25%;
+}
+
+footer {
+    background-color: rgb(143, 74, 10);
+    clear: left;
+}
+
+
+
+footer .nav-vert{
+    float: left;
+    width: 25%;
+}
+
+/*all elements are  float
+ so add container to avoid collapsing using pseudo selector */
+footer::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+section#contactInfo{
+    /* text-align: right; */
+    float: left;
+    width: 25%;
+
+}

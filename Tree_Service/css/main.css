@@ -1,0 +1,129 @@
+/* mobile devices */
+
+body {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    position: relative;
+}
+
+.header {
+    border-bottom: 2px solid #0084bf;
+    background-color: #b5cc88;
+    height: 28px;
+    width: 100%;
+}
+
+.header ul li {
+    display: inline;
+    padding-right: 30px;
+
+}
+
+.header ul a {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+}
+
+.header ul a:visited {
+    color: white;
+}
+
+.header ul a:hover {
+    color: #0084bf;
+}
+
+.aside {
+    display: none;
+}
+
+.article {
+    display: block;
+    position: relative;
+}
+
+.article img {
+    width: 100%;
+}
+
+.article p {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 0.9em;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.address {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 0.9em;
+
+    margin: 25px;
+}
+
+.services-img{
+    font-size: 20px;
+}
+
+.services-img img{
+    height: 10%;
+    width: 100%;
+}
+
+
+/* tablet and desktop devices*/
+
+@media only screen and (min-width: 601px) {
+
+    body {
+        position: absolute;
+        width: 100%;
+    }
+
+    .aside {
+        background-color: #a29d96;
+        display: block;
+        float: left;
+        margin-top: -30px;
+        width: 250px;
+    }
+
+    .aside blockquote {
+        color: white;
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+        font-size: 0.9em;
+        width: 80%;
+    }
+
+    .aside p {
+        margin: 15px 0 15px 45px;
+    }
+
+    .article img {
+        position: inherit;
+    }
+
+    .article {
+        margin-left: 250px;
+    }
+
+    .article p,
+    .address {
+        font-size: 1em;
+    }
+
+    .services-content > p{
+        margin: 10px 0 10px 0;
+    }
+
+    .footer{
+        border-top: 2px solid #b5cc88;
+
+        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+        font-size: 0.7em;
+        padding: 20px;
+        text-align: center;
+    }
+}
+

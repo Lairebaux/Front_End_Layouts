@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Quicksand;
+    src: url("Quicksand-Regular.ttf") format("truetype"),
+        url("Quicksand-Regular.woff") format("woff");
+}
+
+body {
+    color: rgb(155, 150, 150);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header img {
+    width: 100%;
+}
+
+
+h1,
+h2 {
+    font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+
+aside blockquote {
+    color: rgb(232, 165, 116);
+    margin: 15px;
+}
+
+nav {
+    float: left;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav,
+aside {
+    font-size: 0.8em;
+}
+
+nav ul {
+    line-height: 2em;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+
+nav ul li a:visited,
+nav ul li a:link {
+    color: rgb(151, 151, 151);
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    color: rgb(264, 64, 255);
+    text-decoration: underline;
+}
+
+.group {
+    margin-top: 20px;
+}
+
+article#about {
+    float: left;
+    margin: 0 3% 0 3%;
+    width: 50%;
+}
+
+article#about h1 {
+    color: white;
+    background-color: rgb(241, 147, 80);
+}
+
+article#about h2 {
+    color: white;
+    background-color: rgb(235, 177, 131);
+}
+
+article#about img {
+    margin: 0 0 10px 10px;
+    width: 40%;
+}
+
+article#about li:first-of-type {
+    list-style-image: url("../images/runicon.png");
+}
+
+article#about li:nth-of-type(2) {
+    list-style-image: url("../images/bikeicon.png");
+}
+
+article#about li:last-of-type {
+    list-style-image: url("../images/swimicon.png");
+}
+
+article.syllabus h1,
+article.syllabus h2 {
+    background-color: rgb(241, 163, 176);
+    color: rgb(101, 101, 101);
+}
+
+article.syllabus {
+    float: left;
+    width: 70%;
+    margin: 0 4% 0 4%;
+}
+
+article.syllabus ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+article.syllabus ol ol {
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+    padding-left: 20px;
+
+}
+
+article.syllabus ol ol ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+aside {
+    float: left;
+    margin: 0 1% 0 0;
+    width: 20%;
+}
+
+aside blockquote {
+    quotes: "\201C""\201D";
+    margin: 20px 10px;
+}
+
+aside blockquote:before {
+    content: open-quote;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+aside blockquote:after {
+    content: close-quote;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: rgb(225, 225, 225, 0.7);
+    border-top: 1px solid rgb(155, 150, 150);
+    clear: left;
+    font: normal small-caps bold 0.9em/3em
+        /* font size, line-height*/
+        Quicksand, Verdana, Geneva, sans-serif;
+    text-align: center;
+    /* width: 100%; */
+}
