@@ -1,28 +1,38 @@
-
+html {
+    background: rgb(199, 103, 13);
+}
 
 body {
-    /* single space */
+    background-color: rgb(143, 74, 10);
     line-height: 1;
-    /* center horizontally */
     margin-left: auto;
     margin-right: auto;
     min-width: 640px;
-    max-width: 960px;
+    max-width: 1080px;
     width: 95%;
 }
 
+a {
+    color: white;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 img {
     display: block;
     width: 100%;
 }
 
-.nav ul, .nav-vert ul {
+.nav ul,
+.nav-vert ul {
     list-style: none;
 }
 
 
-.nav a, .nav-vert a{
+.nav a,
+.nav-vert a {
     text-decoration: none;
 }
 
@@ -36,6 +46,18 @@ img {
     text-align: center;
 }
 
+h1,
+section#contactInfo p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+
+h1,
+section#leftColumn p {
+    color: rgb(230, 133, 95);
+}
+
 section#leftColumn {
     clear: left;
     float: left;
@@ -43,42 +65,48 @@ section#leftColumn {
     width: 33%;
 }
 
-section#rightColumn{
+section#leftColumn p {
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+}
+
+section#rightColumn {
     float: left;
     width: 67%;
 }
 
 section#rightColumn img {
     width: 100%;
+}
 
-
-}section#rightColumn > .nav li {
+section#rightColumn>.nav li {
     width: 25%;
 }
 
 footer {
-    background-color: rgb(143, 74, 10);
+    background-color: rgb(128, 77, 29);
     clear: left;
 }
 
 
-
-footer .nav-vert{
+footer .nav-vert {
     float: left;
     width: 25%;
 }
 
 /*all elements are  float
  so add container to avoid collapsing using pseudo selector */
-footer::after{
+footer::after {
     clear: both;
     content: "";
     display: table;
 }
 
-section#contactInfo{
-    /* text-align: right; */
+section#contactInfo {
     float: left;
     width: 25%;
+}
 
+section#contactInfo p {
+    color: white;
 }
