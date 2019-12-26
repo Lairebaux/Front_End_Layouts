@@ -1,0 +1,114 @@
+body {
+    /* background-color: rgba(251, 150, 212, 0.746); */
+    background: rgb(250, 236, 174);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html{
+    background-color: #ff9999;
+}
+
+header {
+    background-color: rgb(51, 129, 207);
+    display: flex;
+}
+
+header img {
+    width: 70%;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav a {
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(202, 201, 201);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    text-decoration: none;
+}
+
+header nav li {
+    padding: 5px 0 10px 30px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+nav.horizontal {
+    background-color: rgb(2, 2, 129);
+    padding: 10px 0 10px 0;
+}
+
+ul.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#topics img {
+    height: 95px;
+    width: 85px;
+}
+
+#topics li {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#topics li p {
+    display: flex;
+    text-align: left;
+    padding-right: 10px;
+}
+
+#topics {
+    margin-left: 90px;
+    width: 85%;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+footer {
+    background-color: rgb(51, 129, 207);
+    color: rgba(202, 201, 201, 0.692);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+ul#comments{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+ul#comments li{
+    flex: 0 50%;
+    display: flex;
+    padding: 20px;
+}
+
+ul#comments img{
+    margin-right: 10px;
+}
+
+ul#comments p{
+    margin-right: 120px;
+}
