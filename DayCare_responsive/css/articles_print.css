@@ -1,0 +1,90 @@
+
+/* Hidden Objects */
+
+nav.horizontal,
+aside,
+footer {
+    display: none;
+}
+
+/* Page Box Styles */
+
+@page {
+    size: 216mm 279mm;
+    margin: 13mm;
+}
+
+/* Header Styles */
+
+body header {
+    text-align: right;
+}
+
+body header img {
+    width: 100%;
+}
+
+
+/* Typography Styles */
+
+h1 {
+    font-size: 28pt;
+    line-height: 30pt;
+    margin: 8mm 0mm 5mm;
+}
+
+h2 {
+    /* font-size: 20pt; */
+    margin: 3mm 0mm 3mm 8mm;
+}
+
+p {
+    font-size: 12pt;
+    margin: 3mm 0 3mm 8mm
+}
+
+
+/* List Styles */
+
+ul {
+    list-style-type: disc;
+    margin-left: 13mm;
+}
+
+/* Image Styles */
+
+article img {
+    border: 2px solid rgb(191, 191, 191);
+    display: block;
+    margin: 6mm auto;
+    width: 65%;
+}
+
+
+
+
+/* Hypertext Styles */
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+section#main ul a::after {
+    content: " ("attr(href) ")";
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+/* Page Break Styles */
+
+
+article:nth-of-type(n+2) {
+    page-break-after: always;
+}
+
+img, ol, ul, p {
+    page-break-inside: avoid;
+}
+
