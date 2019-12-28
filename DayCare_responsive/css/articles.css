@@ -1,0 +1,201 @@
+/* ================
+   Base Flex Styles
+   ================
+*/
+
+
+/* body*/
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
+
+li a {
+    text-decoration: none;
+}
+
+header li {
+    list-style-type: none;
+    color: white;
+
+}
+
+
+header,
+footer {
+    background-color: rgb(117, 140, 72);
+    width: 100%;
+}
+
+
+
+/* body header*/
+
+
+header {
+    background: rgb(134, 176, 232);
+
+}
+
+header img {
+    width: 100%;
+}
+
+/* nav */
+
+#navicon {
+    display: none;
+}
+
+
+nav.horizontal {
+    background-color: rgb(117, 140, 72);
+}
+
+nav.horizontal ul {
+    display: flex;
+    flex-flow: wrap;
+}
+
+nav.horizontal li {
+    flex: 1 1 auto;
+    line-height: 2em;
+    text-align: center;
+}
+
+nav.horizontal a:hover {
+    color: white
+}
+
+nav.horizontal a:active,
+nav.horizontal a:link {
+    color: white;
+}
+
+nav.horizontal li:nth-of-type(2) {
+    background-color: rgb(31, 73, 125);
+
+}
+
+/* aside */
+
+aside {
+    background-color: rgb(207, 222, 172);
+    float: 1 1 810px;
+}
+
+
+aside ol {
+    list-style-type: none;
+}
+
+aside ol li {
+    margin: 10px;
+}
+
+aside li {
+    line-height: 1.8em;
+    margin-top: 10px;
+}
+
+aside li li {
+    margin-left: 25px;
+}
+
+/* article */
+
+article h1 {
+    font-size: 2em;
+}
+
+section#main article img {
+    border: 1px solid rgb(151, 151, 151);
+    margin: 10px auto;
+    width: 90%;
+}
+
+/* section */
+
+section#main {
+    background: rgb(231, 231, 231);
+    padding: 20px;
+    flex: 5 1 301px;
+}
+
+section#main article h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+section#main ul {
+    line-height: 1.4em;
+    list-style-type: disc;
+    padding-left: 50px;
+}
+
+section#main article p {
+    margin: 15px 0;
+}
+
+section#main article:nth-of-type(n+2) {
+    border-top: 4px solid rgb(121, 121, 121);
+}
+
+
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+
+@media only screen and (max-width: 480px) {
+
+    aside {
+        display: none;
+    }
+
+    nav.horizontal ul {
+        display: none;
+    }
+
+    #navicon {
+        display: block;
+        height: 50px;
+        width: 50px;
+    }
+
+    a#navicon:hover+ul,
+    a#navicon+ul:hover {
+        display: block;
+    }
+
+    nav.horizontal li {
+        font-size: 1.5em;
+        line-height: 2.2em;
+
+    }
+
+}
+
+
+/* ============================================
+Desktop Styles: 769px 
+   ============================================
+*/
+
+@media only screen and (min-width: 769px) {
+
+    body {
+        width: 90%;
+    }
+
+    html {
+        background: url("../images/tf_back1.png") 
+        center center / cover no-repeat fixed;
+    }
+
+}
