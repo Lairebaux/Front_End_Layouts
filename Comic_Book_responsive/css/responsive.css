@@ -1,0 +1,77 @@
+
+
+
+
+/* Flex Layout Styles */
+
+
+
+
+/* =============================
+	Mobile Styles: 0 - 480 pixels
+   =============================
+*/
+@media only screen and (max-width: 480px) {
+   section#sheet > img  {
+      width: 100%;
+   }
+    
+   article > h1 {
+      text-align: center;
+   }
+   
+   section#sheet  footer {
+      text-align: center;
+      width: 100%;
+      background-color: white;
+   }
+   section#sheet {
+      background-color: white;
+      line-height: 2em;
+   }
+
+   section#sheet h1 {
+      text-align: center;
+      letter-spacing: 5px;
+      
+   }
+
+   nav.horizontal  {
+      order: 99
+   }
+   
+
+   nav.horizontal a {
+      text-decoration: none;
+      color:  rgb(51, 51, 51);
+      font-size: 1.2em;
+      font-weight: bold;
+   }
+   
+   nav.horizontal li {
+      text-align: center;
+      padding: 5px 0;
+      
+   }
+
+
+
+
+
+
+}
+
+
+
+/* =================================================
+	Tablet and Desktop Styles: 481 pixels and greater
+   =================================================
+*/
+
+/* @media only screen and (min-width: 761px){
+
+   nav.horizontal {
+      background-color: rgb(14, 13, 11);
+   }
+} */
+
