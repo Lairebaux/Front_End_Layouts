@@ -1,2 +1,2 @@
 
-This Repo contains my reproduction of different front-ends with CSS.
+This Repo contains my reproduction of different front-end layout to match the target image.
