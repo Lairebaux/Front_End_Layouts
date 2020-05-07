@@ -1,8 +1,9 @@
 /* mobile first design */
 * {
-    text-decoration: none;
-    list-style-type: none;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 body {
@@ -11,7 +12,63 @@ body {
 }
 
 
+.cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* width: 25%; */
 
+}
+
+.cards {
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 0 20px;
+    box-shadow: rgb(227, 227, 227) -2px 3px,
+                rgb(227, 227, 227) 2px 3px;
+    /* width: 50%; */
+    text-align: center;
+
+}
+
+.cards button {
+    background-color: #1E1E24;
+    border: none;
+    color: white;
+    margin: 15px 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.cards h1 {
+    margin: 20px 0 ;
+    text-align: center;
+    width: 100%;
+}
+
+.cards img {
+    height: 40px;
+    width: 40px;
+}
+
+.cards > div {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.cards p {
+    color:grey;
+    /* min-height: auto; */
+    /* text-indent: 10px; */
+    text-align: center;
+    /* padding-left: 10%; */
+    max-width: 400px;
+    min-width: 300px;
+    /* justify-content: center; */
+    /* align-self: center; */
+}
 
 .navbar-brand {
     width: 60%;
@@ -31,7 +88,6 @@ nav {
     background-color: #1E1E24;
     display: flex;
     flex-flow: row wrap;
-    /* padding: 10px 25px 5px 5px; */
     padding-left: 5px;
     width: 100%;
 }
@@ -43,7 +99,6 @@ nav {
 
 .nav-link-items li a {
     color: whitesmoke;
-
 }
 
 .main-intro {
@@ -51,31 +106,42 @@ nav {
     z-index: -1;
 }
 
+.main-intro-text h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.main-intro-text p {
+    /* margin-top: 10px; */
+    /* line-height: 1.4rem; */
+    margin: 5px 0;
+    width: 100%;
+
+}
+
+.main-intro-text aside {
+    background-color: rgba(41, 40, 38, 0.76);
+    color: white;
+    opacity: 0.6;
+    padding: 20px 10px;
+}
 
 .main-intro-text-container {
     color: whitesmoke;
     position: absolute;
     /* left: 50%; */
-    top: 50%;
+    top: 25%;
     /* transform: translate(-50%, -50%);    */
     width: 100%;
 }
 
-.main-intro-text-container aside {
-    background-color: rgba(41, 40, 38, 0.76);
-    color: white;
-    opacity: 0.6;
-    width: 100%;
-} 
-
-.main-intro-text header {
-    font-size: 2em;
+.main-intro-text-container header {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    /* text-align: justify; */
 }
-
-.main-intro-text h1 {
-    font-size: 1.2em;
-}
-
 
 .menu {
     padding-left: 80px;
@@ -109,6 +175,7 @@ DESKTOP & TABLE STYLE
 ====================*/
 
 @media (min-width: 768px) {
+
 
     .main-intro {
         display: flex;
@@ -144,6 +211,6 @@ DESKTOP & TABLE STYLE
         display: flex;
     }
 
-    
-    
+
+
 }
