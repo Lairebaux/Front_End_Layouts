@@ -1,5 +1,10 @@
 /prac
 .DS_Store
 /Falcon_9
-Desert_Recipes_Bootstrap/node_modules
+
 main.css.map
+
+.vscode/
+
+
+
